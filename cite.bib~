@@ -1,0 +1,11 @@
+@Misc{ap-wiki,
+  title = "Geometric progression",
+  \url   = "http://en.wikipedia.org/wiki/Geometric_progression",
+  
+}
+
+@Misc{gp-wiki,
+  title = "Arithmetic progression",
+  year = "2008",
+  note = {\url{http://en.wikipedia.org/wiki/Arithmetic_progression}},
+}
