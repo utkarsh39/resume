@@ -1,11 +1,8 @@
 all: pdf clean
 
-dvi:    intern_d1.tex
-	latex intern_d1.tex
-
-pdf: 	intern_d1.tex
-	pdflatex intern_d1
-
+pdf: 	resume_finalyear.tex resume_finalyear_1page.tex
+	pdflatex resume_finalyear
+	pdflatex resume_finalyear_1page
 clean:
 	rm *aux
 	rm *log
