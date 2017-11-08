@@ -1,0 +1,191 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage[none]{hyphenat}
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Utkarsh}{Agarwal}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{}{Seoul, South Korea}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+82~(10)~5926~6042}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{utkarshagarwal39@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.sites.google.com/view/utkarsh39/}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Interests}
+\cvitem{}{Distributed Computing, Cloud Computing, Parallel Computing}
+\section{Education}
+\cventry{2013--2017}{B.Tech in Computer Science and Engineering}{\newline{}Indian Institute of Technology Kanpur}{}{GPA 9.3/10}{}  % arguments 3 to 6 can be left empty
+\cventry{2013}{Higher Secondary Examination}{DAV School}{Kota}{92.4\%}{}
+
+\section{Honours and Awards}
+\cvlistitem{Secured All India Rank \textbf{132} (99.91 percentile) in IIT JEE Advanced 2013 among 0.15 million students.}
+\cvlistitem{Awarded  \textbf{Academic Excellence Award}  for outstanding academic achievement (2014-15) in university.}
+\cvlistitem{Secured \textbf{A*} grade for excellent performance in CS330: Operating Systems, CS210: Data Structure and Algorithms, PSY152: Application of Psychology to Life}
+\cvlistitem{Secured \textbf{99.87 }percentile in JEE Mains 2013 among 1.4 million students from all over India.}
+\cvlistitem{Selected to appear in INJSO, 2010; INAO (Jr.), 2010 and INChO, 2013 for being among the \textbf{top 300 in India}}
+
+\section{Research Experience}
+\cvitem{Summer 2017}{\textbf{Understanding DNN Performance Aimed at Expediting DNN Training}}
+\cvitem{}{\textit{Guide: Dr. Muthian Sivathanu, Microsoft Research}}
+\cvitem{}{
+\begin{itemize}
+	\item Benchmarked state of the art CNN and RNN models and observed a wide gap in the theoretical and practical GPU Floating Performance (FPP) in DNN training.
+    \item Investigated Tensorflow Architecture and explored Tensorflow code-base to identify the bottlenecks.
+    \item Fixed a major bug in GPU Profiling (measuring GPU kernel performance) in Tensorflow and integrated the fix with Tensorboard, Tensorflow's visualization tool.
+    \item Brought down the profiling overhead in Tensorflow from 8 percent (Tensorflow's profiler) to 3.7 percent (Custom Profiler).
+	\item As a part of a long term project, chalked out the roadmap to dynamically modify Tensorflow Execution Graph in place from iteration to iteration and performed some successful elementary experiments.
+ \end{itemize}}
+ \newpage
+ 
+ \cvitem{Jan-Apr 2017}{\textbf{Mixed Linear Regression in Online Setting}}
+\cvitem{}{\textit{Guide: Prof. Purushottam Kar, IIT Kanpur}}
+\cvitem{}{
+Proposed an algorithm for solving Mixed Linear Regression in online setting with two components. Prior work by Yi et. al. solved the problem in the batch setting. We extended the work to solve the problem in an online setting. Our results show that upon having sufficient samples, we thereafter incur a constant instantaneous pseudo regret.}
+
+\cvitem{Jan-Apr 2016}{\textbf{Most Violated Constraint for Concentrated ROC (CROC)}}
+\cvitem{}{\textit{Guide: Prof. Purushottam Kar, IIT Kanpur}}
+\cvitem{}{
+Proposed a novel algorithm for optimising Concentrated ROC (CROC) and partial CROC (pCROC), performance measures originating from the field of Bioinformatics for optimising early retrieval. This problem reduces to assigning every positive labelled point a rank relative to the negatives, such that the top-ranked positives have very high ranks at the cost of inferior ranks of other positives. We developed a polynomial time algorithm to find the Most Violated Constraint which then fit into the Joachim's Struct SVM framework.
+}
+
+\cvitem{Jul-Nov 2016}{\textbf{Convex Surrogates for Optimising AUC Related Performance Measures}}
+\cvitem{}{\textit{Guide: Prof. Purushottam Kar, IIT Kanpur}}
+\cvitem{}{
+Extended the work on CROC and used bipartite and full ranking techniques to solve a bunch of more complex performance measures viz. Rate Weighted AUC (rAUC), Robust Initial Enhancement (RIE), Area Under Accumulation Curve (AUAC) which are modifications of AUC and focus on early retrieval.
+}
+
+
+
+
+\section{Work Experience}
+\cvitem{Sep 2017 - Present}{\textbf{Software Engineer}, \textit{Samsung Electronics}, Seoul, Korea}
+\cvitem{}{Working in Virtualization Lab in SDN team on distributed operation of ONOS, an SDN operating system. Currently investigating the distributed architecture of ONOS and working to mitigate node failures in the small cluster setting.}
+
+\cvitem{Summer 2016}{\textbf{Software Engineering Intern}, \textit{Samsung Electronics}, Seoul, Korea}
+\cvitem{}{\textit{Guide: Rajesh Gupta}}
+\cvitem{}{Worked on expediting the data processing and query execution workflows of a commercial big data analytics tool. Designed an approximation algorithm intertwined with SQL which significantly reduced the amount of data undergoing shuffle at the cost of some error in the results.}
+\cvitem{Data Processing}{\begin{itemize}
+\item Achieved increased stability and more than 2X improvement in the worst case performance of various component applications, doubling the raw data processing capacity of the commercial tool by tuning and optimising Apache Spark configuration
+\item Automated some aspects of performance tuning to enable the tool to optimise itself in various performance scenarios.
+\end{itemize}}
+\cvitem{Query Execution}{\begin{itemize}
+\item Achieved maximum 4X improvement (75 percent reduction) and minimum 2X improvement (50 percent reduction) in query time across all queries with an average improvement of 2.89X.
+\item Changes recommended to the application architecture and the code base were pushed to the final product.
+\end{itemize} }
+
+\cvitem{Summer 2015}{\textbf{Software Engineering Intern}, \textit{Altisource Labs}, Bangalore, India}
+\cvitem{}{\textit{Guide: Sunil Bedre}}
+\cvitem{CHEF}{To automate configuration management of the organisation using CHEF
+\begin{itemize}
+\item Accelerated the building, upgrading and repairing of infrastructure as well as achieved the upkeep of a hundred node cluster
+\end{itemize}}
+\vspace{-0.4cm}
+\cvitem{Graphite}{To report server parameters through graphs using Graphite\begin{itemize}
+\item  Enabled plotting of large dynamic data over internal network and achieved real time monitoring of a scalable infrastructure
+\item Transformed and expedited the auditing process in the organisation by monitoring crucial parameters through graphs
+\end{itemize}}
+
+\vspace{-0.4cm}
+
+\section{Key Projects}
+
+\cvitem{Jan-Apr 2016}{\textbf{Object Detection in Traffic Surveillance Video}}
+\cvitem{}{\textit{Guide: Prof. Harish Karnick}\begin{itemize}
+    \item Extracted regions of interest from the video using image processing algorithms and refined them using NMS (non maximal suppression) algorithm on a pyramid of Gaussians built on the subframes of the initial regions.
+    \item Experimented with different feature representations of images like HoG and SIFT for training the classifier.
+    \item Achieved a classification accuracy of 85\% using Linear SVC as classifier and HoG feature representation.
+\end{itemize}}
+\vspace{-0.4cm}
+\cvitem{Jan-Apr 2016}{\textbf{Scala to MIPS Compiler}}
+\cvitem{}{\textit{Guide: Prof. Subhajit Roy} \begin{itemize}
+    \item Programmed a Scala to MIPS assembly compiler with support for basic data types, conditional statements, looping statements, arrays, nested functions and recursion.
+\end{itemize}}
+
+\vspace{-0.4cm}
+
+\section{Teaching Experience}
+\cvitem{2014}{\textbf{Academic Mentor}, \textit{Introduction to Programming} \begin{itemize}
+    \item Took dormitory level classes and did peer to peer mentoring for academically deficient students
+\end{itemize}}
+
+\vspace{-0.4cm}
+
+\section{Extra Curricular Activities}
+\cvitem{}{\textbf{Debating / Oration}\begin{itemize}
+\item{ Stood first in Parliamentary Debate in Galaxy’14, an intra university cultural festival}
+\item {Adjudged \textbf{Best Debater} in high school and participated in various inter school debate competitions}\end{itemize}}
+
+\vspace{-0.45cm}
+
+\cvitem{}{\textbf{Alumni Contact Program (ACP)}, IIT Kanpur\begin{itemize}
+\item{ Mentored a team of six for contacting Alumni to foster a healthy relationship with them}
+\item {Adjudged an Executive caller for \textbf{exhibiting commendable soft skills} in English}\end{itemize}}
+
+\vspace{-0.45cm}
+
+\cvitem{}{\textbf{Senior Executive, Public Relations,} Antaragni\begin{itemize}
+\item {Invited eminent personalities in the field of economics for Antaragni, an Inter College Cultural festival}
+\item {Convinced NGOs to sponsor and organise Antaragni Leadership Initiative (ALI) in major cities viz. Delhi and Lucknow}\end{itemize}}
+
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template.tex'.
