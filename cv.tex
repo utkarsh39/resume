@@ -18,7 +18,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.82]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -62,7 +62,7 @@
 \cvlistitem{Awarded  \textbf{Academic Excellence Award}  for outstanding academic achievement (2014-15) in university.}
 \cvlistitem{Secured \textbf{A*} grade for excellent performance in CS330: Operating Systems, CS210: Data Structure and Algorithms, PSY152: Application of Psychology to Life}
 \cvlistitem{Secured \textbf{99.87 }percentile in JEE Mains 2013 among 1.4 million students from all over India.}
-\cvlistitem{Selected to appear in INJSO, 2010; INAO (Jr.), 2010 and INChO, 2013 for being among the \textbf{top 300 in India}}
+\cvlistitem{Selected to appear in INJSO, 2010; INAO (Jr.), 2010 and INChO, 2013 for being among the \textbf{top 300 in India}.}
 
 \section{Research Experience}
 \cvitem{Summer 2017}{\textbf{Understanding DNN Performance Aimed at Expediting DNN Training}}
@@ -72,7 +72,7 @@
 	\item Benchmarked state of the art CNN and RNN models and observed a wide gap in the theoretical and practical GPU Floating Performance (FPP) in DNN training.
     \item Investigated Tensorflow Architecture and explored Tensorflow code-base to identify the bottlenecks.
     \item Fixed a major bug in GPU Profiling (measuring GPU kernel performance) in Tensorflow and integrated the fix with Tensorboard, Tensorflow's visualization tool.
-    \item Brought down the profiling overhead in Tensorflow from 8 percent (Tensorflow's profiler) to 3.7 percent (Custom Profiler).
+    \item Brought down the profiling overhead in Tensorflow from 8 percent (Tensorflow's profiler) to 3.7 percent (Custom profiler).
 	\item As a part of a long term project, chalked out the roadmap to dynamically modify Tensorflow Execution Graph in place from iteration to iteration and performed some successful elementary experiments.
  \end{itemize}}
  \newpage
@@ -82,16 +82,16 @@
 \cvitem{}{
 Proposed an algorithm for solving Mixed Linear Regression in online setting with two components. Prior work by Yi et. al. solved the problem in the batch setting. We extended the work to solve the problem in an online setting. Our results show that upon having sufficient samples, we thereafter incur a constant instantaneous pseudo regret.}
 
-\cvitem{Jan-Apr 2016}{\textbf{Most Violated Constraint for Concentrated ROC (CROC)}}
+\cvitem{Jan-Apr 2016}{\textbf{Most Violated Constraint for Concentrated Receiver Operating Characteristic}}
 \cvitem{}{\textit{Guide: Prof. Purushottam Kar, IIT Kanpur}}
 \cvitem{}{
-Proposed a novel algorithm for optimising Concentrated ROC (CROC) and partial CROC (pCROC), performance measures originating from the field of Bioinformatics for optimising early retrieval. This problem reduces to assigning every positive labelled point a rank relative to the negatives, such that the top-ranked positives have very high ranks at the cost of inferior ranks of other positives. We developed a polynomial time algorithm to find the Most Violated Constraint which then fit into the Joachim's Struct SVM framework.
+Proposed a novel algorithm for optimising Concentrated Receiver Operating Characteristic (CROC) and partial CROC (pCROC), performance measures originating from the field of Bioinformatics for optimising early retrieval. This problem reduces to assigning every positive labelled point a rank relative to the negatives, such that the top-ranked positives have very high ranks at the cost of inferior ranks of other positives. We developed a polynomial time algorithm to find the Most Violated Constraint which then fit into the Joachim's Struct Support Vector Machine (SVM)  framework.
 }
 
 \cvitem{Jul-Nov 2016}{\textbf{Convex Surrogates for Optimising AUC Related Performance Measures}}
 \cvitem{}{\textit{Guide: Prof. Purushottam Kar, IIT Kanpur}}
 \cvitem{}{
-Extended the work on CROC and used bipartite and full ranking techniques to solve a bunch of more complex performance measures viz. Rate Weighted AUC (rAUC), Robust Initial Enhancement (RIE), Area Under Accumulation Curve (AUAC) which are modifications of AUC and focus on early retrieval.
+Extended the work on CROC and used bipartite and full ranking techniques to solve a bunch of more complex performance measures viz. Rate Weighted AUC (rAUC), Robust Initial Enhancement (RIE), Area Under Accumulation Curve (AUAC) which are modifications of area under the ROC curve (AUC) and focus on early retrieval.
 }
 
 
@@ -99,13 +99,13 @@ Extended the work on CROC and used bipartite and full ranking techniques to solv
 
 \section{Work Experience}
 \cvitem{Sep 2017 - Present}{\textbf{Software Engineer}, \textit{Samsung Electronics}, Seoul, Korea}
-\cvitem{}{Working in Virtualization Lab in SDN team on distributed operation of ONOS, an SDN operating system. Currently investigating the distributed architecture of ONOS and working to mitigate node failures in the small cluster setting.}
+\cvitem{}{Working in Virtualization Lab in Software Defined Networking (SDN) team on distributed operation of Open Networking Operating System (ONOS), an SDN operating system. Currently investigating the distributed architecture of ONOS and working to mitigate node failures in the small cluster setting.}
 
 \cvitem{Summer 2016}{\textbf{Software Engineering Intern}, \textit{Samsung Electronics}, Seoul, Korea}
 \cvitem{}{\textit{Guide: Rajesh Gupta}}
 \cvitem{}{Worked on expediting the data processing and query execution workflows of a commercial big data analytics tool. Designed an approximation algorithm intertwined with SQL which significantly reduced the amount of data undergoing shuffle at the cost of some error in the results.}
 \cvitem{Data Processing}{\begin{itemize}
-\item Achieved increased stability and more than 2X improvement in the worst case performance of various component applications, doubling the raw data processing capacity of the commercial tool by tuning and optimising Apache Spark configuration
+\item Achieved increased stability and more than 2X improvement in the worst case performance of various component applications, doubling the raw data processing capacity of the commercial tool by tuning and optimising Apache Spark configuration.
 \item Automated some aspects of performance tuning to enable the tool to optimise itself in various performance scenarios.
 \end{itemize}}
 \cvitem{Query Execution}{\begin{itemize}
@@ -117,12 +117,12 @@ Extended the work on CROC and used bipartite and full ranking techniques to solv
 \cvitem{}{\textit{Guide: Sunil Bedre}}
 \cvitem{Chef}{To automate configuration management of the organisation using Chef
 \begin{itemize}
-\item Accelerated the building, upgrading and repairing of infrastructure as well as achieved the upkeep of a hundred node cluster
+\item Accelerated the building, upgrading and repairing of infrastructure as well as achieved the upkeep of a hundred node cluster.
 \end{itemize}}
 \vspace{-0.4cm}
 \cvitem{Graphite}{To report server parameters through graphs using Graphite\begin{itemize}
-\item  Enabled plotting of large dynamic data over internal network and achieved real time monitoring of a scalable infrastructure
-\item Transformed and expedited the auditing process in the organisation by monitoring crucial parameters through graphs
+\item  Enabled plotting of large dynamic data over internal network and achieved real time monitoring of a scalable infrastructure.
+\item Transformed and expedited the auditing process in the organisation by monitoring crucial parameters through graphs.
 \end{itemize}}
 
 \vspace{-0.4cm}
@@ -145,27 +145,27 @@ Extended the work on CROC and used bipartite and full ranking techniques to solv
 
 \section{Teaching Experience}
 \cvitem{2014}{\textbf{Academic Mentor}, \textit{Introduction to Programming} \begin{itemize}
-    \item Took dormitory level classes and did peer to peer mentoring for academically deficient students
+    \item Took dormitory level classes and did peer to peer mentoring for academically deficient students.
 \end{itemize}}
 
 \vspace{-0.4cm}
 
 \section{Extra Curricular Activities}
 \cvitem{}{\textbf{Debating / Oration}\begin{itemize}
-\item{ Stood first in Parliamentary Debate in Galaxy’14, an intra university cultural festival}
-\item {Adjudged \textbf{Best Debater} in high school and participated in various inter school debate competitions}\end{itemize}}
+\item{ Stood first in Parliamentary Debate in Galaxy’14, an intra university cultural festival.}
+\item {Adjudged \textbf{Best Debater} in high school and participated in various inter school debate competitions.}\end{itemize}}
 
 \vspace{-0.45cm}
 
 \cvitem{}{\textbf{Alumni Contact Program (ACP)}, IIT Kanpur\begin{itemize}
-\item{ Mentored a team of six for contacting Alumni to foster a healthy relationship with them}
-\item {Adjudged an Executive caller for \textbf{exhibiting commendable soft skills} in English}\end{itemize}}
+\item{ Mentored a team of six for contacting Alumni to foster a healthy relationship with them.}
+\item {Adjudged an Executive caller for \textbf{exhibiting commendable soft skills} in English.}\end{itemize}}
 
 \vspace{-0.45cm}
 
 \cvitem{}{\textbf{Senior Executive, Public Relations,} Antaragni\begin{itemize}
-\item {Invited eminent personalities in the field of economics for Antaragni, an Inter College Cultural festival}
-\item {Convinced NGOs to sponsor and organise Antaragni Leadership Initiative (ALI) in major cities viz. Delhi and Lucknow}\end{itemize}}
+\item {Invited eminent personalities in the field of economics for Antaragni, an Inter College Cultural festival.}
+\item {Convinced NGOs to sponsor and organise Antaragni Leadership Initiative (ALI) in major cities viz. Delhi and Lucknow.}\end{itemize}}
 
 
 
